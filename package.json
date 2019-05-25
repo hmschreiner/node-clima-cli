@@ -1,0 +1,21 @@
+{
+  "name": "node-clima",
+  "version": "0.0.1",
+  "description": "CLI que mostra o clima de uma cidade em tempo real",
+  "preferGlobal": true,
+  "bin": {
+    "clima": "./bin/clima"
+  },
+  "files": [
+    "./bin",
+    "./src"
+  ],
+  "keywords": [],
+  "author": "Henrique Schreiner",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "esm": "^3.2.25",
+    "node-fetch": "^2.5.0"
+  }
+}
