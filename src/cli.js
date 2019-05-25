@@ -21,7 +21,7 @@ export function init(args) {
         })
         .on('--help', () => {
             console.log()
-            console.log('Examplos:')
+            console.log('Exemplos:')
             console.log('$ clima porto alegre')
             console.log('$ clima são paulo')
         })
