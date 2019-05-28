@@ -7,8 +7,8 @@
     "clima": "./bin/clima"
   },
   "files": [
-    "./bin",
-    "./src"
+    "bin",
+    "src"
   ],
   "keywords": [],
   "author": "Henrique Schreiner",
