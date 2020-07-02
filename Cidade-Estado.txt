@@ -1,0 +1,40 @@
+------------------------------------------------
+Utiliza sigla do Estado para diferenciar cidades
+------------------------------------------------
+
+Problema:
+--------
+
+Originalmente, quando executamos:       '$ clima são paulo'
+
+A cidade localizada é:                  Morro de São Paulo - SP
+
+Provavelmente, a API da Climatempo retorna a primeira cidade que possui
+o nome na sua lista.
+
+
+Solução:
+-------
+
+Esta alteração permite incluir a sigla do Estado após o nome da cidade
+para especificá-la.
+
+Desta forma, quando executamos:         '$ clima são paulo - sp'
+
+A cidade localizada é:                  'São Paulo - SP'
+
+
+Implementação:
+-------------
+
+Foi acrescentado um código no arquivo "cli.js" que altera o "cityName" antes do "getForecast", 
+caso ele possua um elemento "-".
+
+Assim, se o "cityName" for:     [ "são", "paulo", "-", "sp"]
+
+Será modificado para:           [ "são", "paulo&state=sp"]
+
+e pode ser enviado para o "getForecast".
+
+
+O exemplo de uso também foi alterado para incluir a nova utilização.
